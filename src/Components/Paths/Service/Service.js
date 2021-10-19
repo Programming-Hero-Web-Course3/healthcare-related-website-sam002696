@@ -14,9 +14,9 @@ const Service = () => {
                 <h1 className='font-bold p-10 text-5xl text-center'>Discover Our Services</h1>
             </div>
             <div>
-                <h1 className="mx-auto text-3xl text-center w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique at mollitia, corporis ullam exercitationem ipsam qui cupiditate aliquam officia earum quae a voluptas? Nobis perspiciatis ipsa architecto porro laborum officiis.</h1>
+                <h1 className="mx-auto sm:text-2xl text-3xl text-center w-2/3">It has always been our belief that the most effective use of our time as financial professionals is servicing our clients. Our clients are always our first priority, and we believe that focusing on helping them pursue their financial goals is the key to building the foundation for a strong relationship.</h1>
             </div>
-            <div className="grid lg:grid-cols-3 p-36 gap-8">
+            <div className="grid lg:grid-cols-3 p-36 gap-8 sm:p-20">
                 {
                     services.map(service => <ServiceStyling service={service} key={service.id}></ServiceStyling>)
                 }

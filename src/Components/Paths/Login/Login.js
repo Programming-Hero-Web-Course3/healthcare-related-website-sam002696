@@ -39,8 +39,8 @@ const Login = () => {
     const element = <FontAwesomeIcon icon={faGoogle} />
     return (
         <div>
-            <div className="min-h-screen flex items-center justify-center bg-gray-200 p-10">
-                <div className="bg-white p-16 rounded shadow-lg w-2/3">
+            <div className="bg-gray-200 flex items-center justify-center min-h-screen lg:p-10 sm:p-0">
+                <div className="bg-white p-16 rounded shadow-lg sm:w-11/12 lg:w-2/3">
 
                     {user.email && toggle && <p className='border-b-2 border-blue-300 font-bold mb-10 mx-auto pb-11 text-4xl text-center text-green-400 w-1/2'>Registration Successful</p>}
 
@@ -112,7 +112,7 @@ const Login = () => {
                         <hr className='border-2 rounded-full w-2/3' /> <span className='font-medium m-10 text-2xl text-center text-gray-400'>OR</span><hr className='border-2 rounded-full w-2/3' />
                     </div>
                     <div className='text-center'>
-                        <div className='bg-red-600 border-2 hover:ring-4 mx-auto p-3 ring-2 ring-red-400 rounded w-1/3 mb-3'>
+                        <div className='bg-red-600 border-2 hover:ring-4 mb-3 mx-auto p-3 ring-2 ring-red-400 rounded sm:w-11/12 lg:w-1/3'>
                             <button onClick={handleGoogleSignIn} className='flex font-semibold items-center mx-auto text-white'> <span className='mx-2 text-2xl'>{element}</span> Google Sign In</button>
                         </div>
 
