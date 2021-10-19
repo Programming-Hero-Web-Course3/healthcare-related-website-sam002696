@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "doctor_name": "Dr.Babatunde",
+        "speciality": "Neurosurgeon",
+        "img": "./DoctorImages/doctor1.jpg"
+    },
+    {
+        "id": 2,
+        "doctor_name": "Dr.Addison Smith",
+        "speciality": "Cardiologist",
+        "img": "./DoctorImages/doctor2.jpg"
+    },
+    {
+        "id": 3,
+        "doctor_name": "Dr.John Karlson",
+        "speciality": "Radiologist",
+        "img": "./DoctorImages/doctor3.jpg"
+    },
+    {
+        "id": 4,
+        "doctor_name": "Dr.Grey",
+        "speciality": "Pediatric",
+        "img": "./DoctorImages/doctor4.jpg"
+    },
+    {
+        "id": 5,
+        "doctor_name": "Dr.Shepherd",
+        "speciality": "Dental Surgeon",
+        "img": "./DoctorImages/doctor5.jpg"
+    },
+    {
+        "id": 6,
+        "doctor_name": "Dr.Christina Yung",
+        "speciality": "Plastic Surgeon",
+        "img": "./DoctorImages/doctor6.jpg"
+    }
+]

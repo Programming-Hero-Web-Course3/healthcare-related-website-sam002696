@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "blog_name": "In this hospital there are special surgeon",
+        "description": "Doctors typically work for hospitals, urgent care facilities and private clinics to administer treatment and give patients health advice.",
+        "img": "./BlogImages/blog1.jpg"
+    },
+    {
+        "id": 2,
+        "blog_name": "World AIDS Day, designated on 1 December",
+        "description": "The identification of the nature of an illness or other problem by examination of the symptoms.",
+        "img": "./BlogImages/blog2.jpg"
+    },
+    {
+        "id": 3,
+        "blog_name": "More than 80 clinical trials launch to test coronavirus",
+        "description": "Pathology is a branch of medical science that involves the study and diagnosis of disease through the examination of surgically removed organs, tissues (biopsy samples), bodily fluids, and in some cases the whole body (autopsy).",
+        "img": "./BlogImages/blog3.jpg"
+    },
+    {
+        "id": 4,
+        "blog_name": "We always give the best from us",
+        "description": "Dental care is the maintenance of healthy teeth and may refer to: Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders.",
+        "img": "./BlogImages/blog4.jpg"
+    },
+    {
+        "id": 5,
+        "blog_name": "Be aware about the coronavirus",
+        "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist.",
+        "img": "./BlogImages/blog5.jpg"
+    },
+    {
+        "id": 6,
+        "blog_name": "No one find any medicines to prevent evolovirus",
+        "description": "Medicine is the field of health and healing. It includes nurses, doctors, and various specialists.",
+        "img": "./BlogImages/blog6.jpg"
+    },
+    {
+        "id": 7,
+        "blog_name": "Thailand is trying to make vaccine of coronavirus",
+        "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system.",
+        "img": "./BlogImages/blog7.jpg"
+    },
+    {
+        "id": 8,
+        "blog_name": "Already 1932 people have died in China",
+        "description": "An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such as hospitals.",
+        "img": "./BlogImages/blog8.jpg"
+    },
+    {
+        "id": 9,
+        "blog_name": "30+ countries have affected by coronavirus",
+        "description": "An ambulance is a medically equipped vehicle which transports patients to treatment facilities, such as hospitals.",
+        "img": "./BlogImages/blog8.jpg"
+    }
+]
