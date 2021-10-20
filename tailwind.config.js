@@ -18,6 +18,7 @@ module.exports = {
   variants: {
     extend: {
       lineClamp: ['hover'],
+      transitionDuration: ['hover', 'focus'],
     },
   },
   plugins: [

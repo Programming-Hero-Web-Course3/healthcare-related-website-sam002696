@@ -1,5 +1,5 @@
 import React from 'react';
-import Fade from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 
 const HomeDoctor = (props) => {

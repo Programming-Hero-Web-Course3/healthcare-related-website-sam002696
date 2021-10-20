@@ -6,6 +6,7 @@ import { useHistory, useLocation } from 'react-router';
 
 
 const Login = () => {
+    const [toggle, setToggle] = useState(false);
     const { googleSignIn, userWithEmailandPassword, setEmail,
         setPassword, signWithEmailandPassword, user, error, setName } = useAuth();
 
@@ -19,15 +20,15 @@ const Login = () => {
                 history.push(redirect)
             });
     }
-
     const handleNameChange = (e) => {
         setName(e.target.value);
     }
 
-    const [toggle, setToggle] = useState(false);
+
 
     const toggleLogin = (e) => {
         setToggle(e.target.checked);
+        console.log(e.target.value);
     }
 
     const email = (e) => {
@@ -50,22 +51,19 @@ const Login = () => {
                     {toggle ? <form onSubmit={userWithEmailandPassword} className="space-y-5">
                         <div>
                             <label htmlFor='inputName' className="block mb-1 font-bold text-gray-500">Name</label>
-                            <input onBlur={handleNameChange} id='inputName' type="text" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" />
+                            <input onBlur={handleNameChange} id='inputName' type="text" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" required />
                         </div>
                         <div>
                             <label className="block mb-1 font-bold text-gray-500">Email</label>
-                            <input onBlur={email} type="email" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" />
+                            <input onBlur={email} type="email" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" required />
                         </div>
 
                         <div>
                             <label className="block mb-1 font-bold text-gray-500">Password</label>
-                            <input onBlur={password} type="password" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" />
+                            <input onBlur={password} type="password" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" required />
                         </div>
 
-                        <div className="flex items-center">
-                            <input onClick={toggleLogin} type="checkbox" id="agree" />
-                            <label htmlFor="agree" className="ml-2 text-gray-700 text-sm">Not Registered?</label>
-                        </div>
+
 
                         {
                             error && <div className='italic p-0.5 text-2xl text-red-600 underline'>
@@ -85,18 +83,18 @@ const Login = () => {
                             </div> */}
                             <div>
                                 <label className="block mb-1 font-bold text-gray-500">Email</label>
-                                <input onBlur={email} type="email" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" />
+                                <input onBlur={email} type="email" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" required />
                             </div>
 
                             <div>
                                 <label className="block mb-1 font-bold text-gray-500">Password</label>
-                                <input onBlur={password} type="password" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" />
+                                <input onBlur={password} type="password" className="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" required />
                             </div>
 
-                            <div className="flex items-center">
+                            {/* <div className="flex items-center">
                                 <input onClick={toggleLogin} type="checkbox" id="agree" />
-                                <label htmlFor="agree" className="ml-2 text-gray-700 text-sm">Not Registered?</label>
-                            </div>
+                                <label htmlFor="agree" className="ml-2 text-gray-700 text-sm cursor-pointer">Not Registered?</label>
+                            </div> */}
 
                             {
                                 error && <div className='italic p-0.5 text-2xl text-red-600 underline'>
@@ -108,6 +106,10 @@ const Login = () => {
 
                         </form>
                     }
+                    <div className=" flex items-center lg:pt-5 sm:pt-5">
+                        <input onClick={toggleLogin} type="checkbox" id="agree" />
+                        <label htmlFor="agree" className="ml-2 text-gray-700 text-sm cursor-pointer">Not Registered?</label>
+                    </div>
                     <div className='flex items-center justify-between mt-3 mx-auto w-2/3'>
                         <hr className='border-2 rounded-full w-2/3' /> <span className='font-medium m-10 text-2xl text-center text-gray-400'>OR</span><hr className='border-2 rounded-full w-2/3' />
                     </div>
